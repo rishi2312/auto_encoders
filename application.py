@@ -20,7 +20,7 @@ class AutoEncoder:
     '''
     def __init__(self,layers):
         self.layers = layers
-        self.x = pd.read_csv('data2.csv').to_numpy()
+        self.x = pd.read_csv('data.csv').to_numpy()
         
     def _encoder(self):
         inputs = Input(shape=(self.x[0].shape))
